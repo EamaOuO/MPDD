@@ -1,0 +1,79 @@
+Dialogue.json:
+(1) Data format:
+    {
+        script name:
+            {
+                case_order:
+                    [
+                        {
+                            "speaker": speaker's name,
+                            "utterance": utterance,
+                            "listener":
+                                [
+                                    {
+                                         "name": listener's name,
+                                         "relation": relation type between speaker and listener
+                                    }, ...
+                                ],
+                            "emotion": speaker's emotion type
+                        }, ...
+                    ]
+            }
+    }
+
+(2) Description:
+    This json file has 6 scripts and the dialogues crawled from them. Every dialogue in the script has a unique case_order value which is the order of the dialogue in the sctipt. Each Dialogue is a list composed of the utterances in speaking order. Every utterance in the list contains the speaker, content, and annotated labels shown in data format. The list of the listeners in the utterance contains all listeners in this utterance with their relation types.
+
+
+Classification.json:
+(1) Data format:
+    {
+        "relation":
+            [
+                "parent", ...
+            ],
+        "field":
+            {
+                "family":
+                    [
+                        "parent", ...
+                    ],
+                "school":
+                    [
+                        "teacher", ...
+                    ],
+                "company":
+                    [
+                        "boss", ...
+                    ],
+                "others":
+                    [
+                        "couple", ...
+                    ]
+            },
+        "position":
+            {
+                "superior":
+                    [
+                        "parent",
+...
+                    ],
+                "peer":
+                    [
+                        "spouse", ...
+                    ],
+                "inferior":
+                    [
+                        "child",
+...
+                    ]
+            },
+        "emotion":
+            [
+                "fear",
+...
+            ]
+    }
+
+(2) Description:
+    The json file defines all the emotion types, relation types, and the sub-classes in the position and field perspectives.
