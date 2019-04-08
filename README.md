@@ -4,7 +4,7 @@ MPDD dataset contains 4,142 dialogues and 25,548 utterances. Each utterance was 
 ## Create dataset
 ```
 pip install -r requirements.txt
-python build_MPDD.py --input_dir ./data/ --output_dir ./
+python build_MPDD.py --data_dir ./data/ --output_dir ./
 ```
 
 ## Reference
