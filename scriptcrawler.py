@@ -119,5 +119,4 @@ class ScriptCrawler:
                                     })
                                         
                 mpdd[title][idx] = sent_list
-
         return mpdd
