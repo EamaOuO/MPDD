@@ -1,4 +1,4 @@
-Dialogue.json:
+ÔªøDialogue.json:
 (1) Data format:
     {
         script name:
@@ -30,47 +30,47 @@ Classification.json:
     {
         "relation":
             [
-                "§˜•¿", ...
+                "Áà∂ÊØç", ...
             ],
         "field":
             {
                 "family":
                     [
-                        "§˜•¿", ...
+                        "Áà∂ÊØç", ...
                     ],
                 "school":
                     [
-                        "¶—Æv", ...
+                        "ËÄÅÂ∏´", ...
                     ],
                 "company":
                     [
-                        "§W•q", ...
+                        "‰∏äÂè∏", ...
                     ],
                 "others":
                     [
-                        "±°´Q", ...
+                        "ÊÉÖ‰æ∂", ...
                     ]
             },
         "position":
             {
                 "superior":
                     [
-                        "§˜•¿",
+                        "Áà∂ÊØç",
 ...
                     ],
                 "peer":
                     [
-                        "∞t∞∏", ...
+                        "ÈÖçÂÅ∂", ...
                     ],
                 "inferior":
                     [
-                        "§l§k",
+                        "Â≠êÂ•≥",
 ...
                     ]
             },
         "emotion":
             [
-                "Æ£ƒﬂ",
+                "ÊÅêÊáº",
 ...
             ]
     }
