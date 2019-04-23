@@ -8,7 +8,7 @@ Dialogue.json:
                         {
                             "speaker": speaker's name,
                             "utterance": utterance,
-                            "listener":
+                            "target_listener":
                                 [
                                     {
                                          "name": listener's name,
@@ -30,47 +30,47 @@ Classification.json:
     {
         "relation":
             [
-                "parent", ...
+                "父母", ...
             ],
         "field":
             {
                 "family":
                     [
-                        "parent", ...
+                        "父母", ...
                     ],
                 "school":
                     [
-                        "teacher", ...
+                        "老師", ...
                     ],
                 "company":
                     [
-                        "boss", ...
+                        "上司", ...
                     ],
                 "others":
                     [
-                        "couple", ...
+                        "情侶", ...
                     ]
             },
         "position":
             {
                 "superior":
                     [
-                        "parent",
+                        "父母",
 ...
                     ],
                 "peer":
                     [
-                        "spouse", ...
+                        "配偶", ...
                     ],
                 "inferior":
                     [
-                        "child",
+                        "子女",
 ...
                     ]
             },
         "emotion":
             [
-                "fear",
+                "恐懼",
 ...
             ]
     }

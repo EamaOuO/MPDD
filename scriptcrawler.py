@@ -12,12 +12,12 @@ import filter
 
 class ScriptCrawler:
     
-    def __init__(self, input_dir, output_dir):
+    def __init__(self, input_dir):
         self.title_list = ['阳光岁月', '我们好好爱', '鲜族兄弟', 
              '在婚姻的调色板上', '瞪眼等着好事来', '家庭保卫战']
-        self.check_path(input_dir, output_dir)
+        self.check_path(input_dir)
         
-    def check_path(self, input_dir, output_dir):
+    def check_path(self, input_dir):
         
         check_flag = True
         
@@ -32,13 +32,7 @@ class ScriptCrawler:
         else:
             print("Label.json not found. Please make sure 'Label.json' in the input directory.")
             check_flag = False
-            
-        if os.path.isdir(output_dir):
-            self.output_file_path = os.path.join(output_dir, 'Dialogue.json')
-        else:
-            print("Output directory not found.")
-            check_flag = False
-            
+        
         if not check_flag:
             sys.exit()
 
@@ -48,6 +42,7 @@ class ScriptCrawler:
         sentences = self.filter_script(scripts)
         sentences = self.convert_to_zhtw(sentences)
         mpdd = self.create_dataset(sentences)
+        return mpdd
     
     def load_script_url(self):
         print("Load script urls...")
@@ -114,14 +109,15 @@ class ScriptCrawler:
                 sent_list = []
                 for sent in dialogue:
                     selected_sent = sentence_list[sent["sent_id"]]
+                    listener_list = [{'name': listener[0], 'relation': listener[1]}
+                        for listener in sent["listener"]]
                     sent_list.append({
                                         "speaker": selected_sent[0],
                                         "utterance": selected_sent[1],
-                                        "listener": sent["listener"],
+                                        "target_lisener": listener_list,
                                         "emotion": sent["emotion"]
                                     })
                                         
                 mpdd[title][idx] = sent_list
-                                    
-        with open(self.output_file_path, 'w', encoding='utf8') as f:
-            json.dump(mpdd, f)
+
+        return mpdd
