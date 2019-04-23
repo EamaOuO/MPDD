@@ -1,1 +1,106 @@
-{"relation": ["parent", "parent-in-law", "grandparent", "other superior", "spouse", "brothers and sisters", "other peer", "child", "son/daughter-in-law", "grandchild", "other inferior", "teacher", "classmate", "student", "boss", "colleague", "subordinate", "partner", "couple", "friend", "enemy", "consignee", "consignor", "stranger", "unknown"], "field": {"family": ["parent", "parent-in-law", "grandparent", "other superior", "spouse", "brothers and sisters", "other peer", "child", "son/daughter-in-law", "grandchild", "other inferior"], "school": ["teacher", "classmate", "student"], "company": ["boss", "colleague", "subordinate", "partner"], "others": ["couple", "friend", "enemy", "consignee", "consignor", "stranger", "unknown"]}, "position": {"superior": ["parent", "parent-in-law", "grandparent", "other superior", "teacher", "boss"], "peer": ["spouse", "brothers and sisters", "other peer", "classmate", "colleague", "partner", "couple", "friend", "enemy", "consignee", "consignor", "stranger", "unknown"], "inferior": ["child", "son/daughter-in-law", "grandchild", "other inferior", "student", "subordinate"]}, "emotion": ["fear", "angry", "disgust", "sadness", "happiness", "surprise", "neutral"]}
+{
+  "relation": [
+    "父母",
+    "公婆(岳父母)",
+    "祖父母",
+    "其他長輩",
+    "配偶",
+    "兄弟姊妹",
+    "其他平輩",
+    "子女",
+    "媳婦(女婿)",
+    "孫子(孫女)",
+    "其他晚輩",
+    "老師",
+    "同學",
+    "學生",
+    "上司",
+    "同事",
+    "下屬",
+    "合作夥伴",
+    "情侶",
+    "朋友",
+    "仇人",
+    "負責人",
+    "委託人",
+    "陌生人",
+    "Unknown"
+  ],
+  "field": {
+    "family": [
+      "父母",
+      "公婆(岳父母)",
+      "祖父母",
+      "其他長輩",
+      "配偶",
+      "兄弟姊妹",
+      "其他平輩",
+      "子女",
+      "媳婦(女婿)",
+      "孫子(孫女)",
+      "其他晚輩"
+    ],
+    "school": [
+      "老師",
+      "同學",
+      "學生"
+    ],
+    "company": [
+      "上司",
+      "同事",
+      "下屬",
+      "合作夥伴"
+    ],
+    "others": [
+      "情侶",
+      "朋友",
+      "仇人",
+      "負責人",
+      "委託人",
+      "陌生人",
+      "Unknown"
+    ]
+  },
+  "position": {
+    "superior": [
+      "父母",
+      "公婆(岳父母)",
+      "祖父母",
+      "其他長輩",
+      "老師",
+      "上司"
+    ],
+    "peer": [
+      "配偶",
+      "兄弟姊妹",
+      "其他平輩",
+      "同學",
+      "同事",
+      "合作夥伴",
+      "情侶",
+      "朋友",
+      "仇人",
+      "負責人",
+      "委託人",
+      "陌生人",
+      "Unknown"
+    ],
+    "inferior": [
+      "子女",
+      "媳婦(女婿)",
+      "孫子(孫女)",
+      "其他晚輩",
+      "學生",
+      "下屬"
+    ]
+  },
+  "emotion": [
+    "恐懼",
+    "憤怒",
+    "厭惡",
+    "悲傷",
+    "快樂",
+    "驚訝",
+    "中性"
+  ]
+}
