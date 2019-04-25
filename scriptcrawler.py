@@ -114,9 +114,10 @@ class ScriptCrawler:
                     sent_list.append({
                                         "speaker": selected_sent[0],
                                         "utterance": selected_sent[1],
-                                        "target_lisener": listener_list,
+                                        "target_listener": listener_list,
                                         "emotion": sent["emotion"]
                                     })
                                         
                 mpdd[title][idx] = sent_list
+
         return mpdd
